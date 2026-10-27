@@ -30,6 +30,12 @@ public class StudentRepository {
 		students.add(s3);
 
 	}
+	
+
+	public String toString() {
+		return "StudentRepository [students=" + students + "]";
+	}
+
 
 	public List<Student> getAllStudents() {
 		return students;
@@ -44,6 +50,10 @@ public class StudentRepository {
 		}
 		return null;
 
+	}
+
+	public void create(Student s1) {
+		students.add(s1);
 	}
 
 }
